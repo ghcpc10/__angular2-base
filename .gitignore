@@ -1,0 +1,10 @@
+node_modules
+bower_components
+___ref
+typings
+dist
+.sass-cache
+.idea/
+npm-debug.log
+client/test/JasmineSpecRunner.html
+server/views/index.html

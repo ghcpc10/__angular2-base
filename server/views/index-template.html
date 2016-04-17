@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+  <!-- inject:css (bower) -->
+  <!-- inject:css (app) -->
+  <link rel="stylesheet" href="/dist/app.css">
+  <!-- endinject -->
+
+  <!-- inject:js (node) -->
+  <script src="/node_modules/es6-shim/es6-shim.js"></script>
+  <script src="/node_modules/angular2/bundles/angular2-polyfills.js"></script>
+  <script src="/node_modules/systemjs/dist/system.src.js"></script>
+  <script src="/node_modules/rxjs/bundles/Rx.js"></script>
+  <script src="/node_modules/angular2/bundles/angular2.dev.js"></script>
+  <!-- inject:js (bower) -->
+  <!-- endinject -->
+</head>
+
+<body>
+  <script>
+    System.config({
+      packages: {
+        node_modules: {
+          defaultExtension: 'js'
+        },
+        dist: {
+          defaultExtension: 'js'
+        }
+      },
+      map : {
+        'angular2': '/node_modules/angular2',
+        'rxjs': '/node_modules/rxjs'
+      },
+      paths: {
+        'underscore': '/node_modules/underscore/underscore.js'
+      }
+    });
+    System.import('./dist/app/index.js')
+      .then(null, console.error.bind(console));
+  </script>
+
+  <my-app>Loading...</my-app>
+</body>
+
+</html>
