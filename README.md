@@ -1,7 +1,11 @@
-## Basic "Angular2 + NodeJs + Gulp" App
+## Angular2 + NodeJs + Gulp Starter Kit
 
+Simple Angular2/Node Boilerplate to kick start your new project with SASS support and Gulp watch/build tasks
 
 ## Getting Started
 
-1. Run "gulp serve" or "gulp build"
-2. To see app run go to: http://localhost:3302
+<ul>
+    <li> >> gulp serve: test locally.</li>
+    <li> >> gulp build: run build version.</li>
+    <li>To see app run go to: http://localhost:3302.</li>
+</ul>
